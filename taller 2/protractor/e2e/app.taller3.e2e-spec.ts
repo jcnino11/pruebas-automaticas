@@ -1,20 +1,20 @@
 import { TourOfHeroesPage } from './app.po';
 
-describe('Buscar heroe', () => {
+describe('BUSCAR', () => {
   let page: TourOfHeroesPage;
 
   beforeEach(() => {
     page = new TourOfHeroesPage();
   });
 
-  it('Deberia resultar Details (heroe buscado)', () => {
+  it('Deberia resultar Details (heroe buscado desde la busqueda)', () => {
     page.navigateTo();
     page.enterSearchHero('Narco');
     expect(page.getDetailsTitle()).toEqual('Narco details!');
   });
 });
 
-describe('Buscar heroe', () => {
+describe('Buscar heroe cambiado', () => {
   let page: TourOfHeroesPage;
 
   beforeEach(() => {
